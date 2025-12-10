@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #184da8; /* azul bebê */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #eceef1;
+    width: 900px;
+    height: 500px;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px rgba(76, 71, 151, 0.4);
+}
+
+/* LADO ESQUERDO */
+.left {
+    flex: 1;
+    background: #ffffff;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-circle {
+    width: 180px;   /* diminui o tamanho da imagem no círculo */
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: none;
+}
+
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left h1 {
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+/* LADO DIREITO */
+.right {
+    flex: 1;
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.right h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.btn {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 25px;
+    transition: .2s;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.not-account {
+    color: #2b0909;
+    margin-top: 10px;
+}
+
+.not-account a {
+    color: #0000ff;
+}
