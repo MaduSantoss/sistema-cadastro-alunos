@@ -1,32 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Cadastro de Alunos</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <title>Meu INSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu INSS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="src/img/Captura de tela 2025-12-09 192742.png">
+  </head>
 <body>
-  <h1>Sistema de Cadastro de Alunos</h1>
+    <div class="container">
 
-  <button id="btnAdd">Adicionar Aluno</button>
+        <!-- LADO ESQUERDO -->
+        <div class="left">
+           <div class="logo-circle">
+          <img src="src/img/Captura de tela 2025-12-09 192742.png" alt="Logo do Sistema">     
+          </div>
 
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Email</th>
-        <th>Idade</th>
-        <th>Turma</th>
-        <th>Ações</th>
-      </tr>
-    </thead>
-    <tbody id="tableBody">
-      <!-- onde os alunos serão listados -->
-    </tbody>
-  </table>
+            <h1>Meu INSS</h1>
+        </div>
 
-  <script src="js/app.js"></script>
+        <!-- LADO DIREITO -->
+        <div class="right">
+            <h2>LOGIN</h2>
+
+            <input id="userInput" type="text" placeholder="Usuário" class="input-box">
+            <input id="passwordInput" type="password" placeholder="Senha" class="input-box">
+
+            <button class="btn next-btn" onclick="login()">ENTRAR</button>
+
+            <p class="not-account">
+                Não tem conta? <a href="#">Criar conta</a>
+            </p>
+        </div>
+
+    </div>
+
+<script src="js/app.js"></script>
 </body>
 </html>
